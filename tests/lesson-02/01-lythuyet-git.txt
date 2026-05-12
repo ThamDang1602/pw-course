@@ -1,0 +1,4 @@
+		a. git init: khởi tạo thư mục ẩn .git ngay trong thư mục hiện tại.
+		b. git add <file_name>: đưa file có tên là file_name từ vùng working directory vào stagin area
+		c. git add .: đưa toàn bộ file trong working directory vào staging area
+        git commit -m “message”: đưa toàn bộ file trong hàng đợi tại staging area lên Repository local

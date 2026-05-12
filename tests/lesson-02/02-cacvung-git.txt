@@ -1,0 +1,34 @@
+		a. Tạo 3 file: file1, file2, file3
+			i. Tạo file mới
+			ii. Sự tồn tại file như sau:
+				1) Working directory: YES (file1, file2, file3)
+				2) Staging area: NO
+				3) Repository: NO
+		b. Chạy lệnh: git init
+			i. Khởi tạo thư mục
+			ii. Đây là 3 file mới tạo nên sự tồn tại file như sau:
+				1) Working directory: YES (file1, file2, file3)
+				2) Staging area: NO
+				3) Repository: NO
+		c. Chạy lệnh: git commit -m”init project”
+			i. Chưa chạy add nên lệnh này sẽ lỗi
+			ii. Sự tồn tại file như sau: Không đổi
+				1) Working directory: YES (file1, file2, file3)
+				2) Staging area: NO
+				3) Repository: NO
+		d. Chạy lệnh: git add file1
+			i. Thêm 1 file vào hàng đợi
+			ii. Sự tồn tại các file như sau:
+				1) Working directory: YES (file1,file2, file3)
+				2) Staging area: YES (file1)
+				3) Repository: NO
+			iii. Lệnh add không bế file đi chỗ khác, chỉ copy file sang chỗ khác thôi.
+		e. Chạy lệnh: git commit -m”add file1”
+			i. Bế file1 lên Repository
+			ii. Sự tồn tại các file như sau:
+				1) Working directory: YES (file1,file2, file3)
+				2) Staging area: NO
+				3) Repository: YES (file1)
+			iii. Lệnh này tạo 1 bản sao ở Repository nên ở working directory vẫn còn
+		f. Chạy lệnh: git commit -m”add file”
+			i. Lỗi vì đã commit rồi, lúc này Stagin area trống.
