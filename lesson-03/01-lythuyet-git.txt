@@ -1,0 +1,5 @@
+git commit --amend
+> Mở editor để sửa message trực tiếp. Dùng khi nội dung message dài mà chỉ muốn sửa một chút.
+
+git commit --amend -m "New message"
+> Sửa message của commit cuối cùng thành "New message". Dùng khi nội dung message ngắn và muốn sửa nhanh.
